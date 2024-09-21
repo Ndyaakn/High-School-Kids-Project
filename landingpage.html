@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Bottom Bar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ladingpage.css" />
+    <!-- Link font cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link />
+    <style>
+      .container {
+        display: block !important;
+      }
+
+      .navbar {
+        margin-bottom: 0;
+        /* Remove bottom margin for navbar */
+      }
+
+      .bottom-bar {
+        background-color: #f8f9fa;
+        /* Light gray background for bottom bar */
+        padding: 10px 0;
+        border-top: 1px solid #dee2e6;
+        /* Border to separate the navbar and bottom bar */
+      }
+
+      .bottom-bar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .bottom-bar .text-muted {
+        margin: 0;
+      }
+
+      .hero-image {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(AMAZON._SX3000_.jpg);
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      .hero-text button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #ddd;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .hero-text button:hover {
+        background-color: #555;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <!-- Dropdown 1 -->
+          <li class="nav-item dropdown dropdown-navbar">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown1"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              English
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown1">
+              <li><a class="dropdown-item" href="#">Item 1.1</a></li>
+              <li><a class="dropdown-item" href="#">Item 1.2</a></li>
+              <li><a class="dropdown-item" href="#">Item 1.3</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown 2 -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown2"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              USD
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown2">
+              <li><a class="dropdown-item" href="#">Item 2.1</a></li>
+              <li><a class="dropdown-item" href="#">Item 2.2</a></li>
+              <li><a class="dropdown-item" href="#">Item 2.3</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown 3 -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown3"
+              role="button"
+              data-bs-toggle="disable"
+              aria-expanded="false"
+            >
+              Call Us 089603540378
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown3">
+              <li><a class="dropdown-item" href="#">Item 3.1</a></li>
+              <li><a class="dropdown-item" href="#">Item 3.2</a></li>
+              <li><a class="dropdown-item" href="#">Item 3.3</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav"></div>
+        <div class="row">
+          <p>Free Delivery On Over <small class="dolars">$200</small></p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="bottom-bar ">
+        <div class="container">
+            <img src="Amazon-Logo.png" width="100px" alt="">
+            <div class="col r">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav mx-auto ">
+
+                          <li class="nav-item dropdown dropdown-navbar">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Home
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                  <li><a class="dropdown-item" href="#">Item 1.1</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.2</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.3</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown dropdown-navbar">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Shop
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                  <li><a class="dropdown-item" href="#">Item 1.1</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.2</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.3</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown dropdown-navbar">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Collection
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                  <li><a class="dropdown-item" href="#">Item 1.1</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.2</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.3</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown dropdown-navbar">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Page
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                  <li><a class="dropdown-item" href="#">Item 1.1</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.2</a></li>
+                                  <li><a class="dropdown-item" href="#">Item 1.3</a></li>
+                              </ul>
+                          </li>
+                          
+                        </div> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="Amazon-Logo.png" width="100" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-search search"></i>
+            <i class="bi bi-person-circle user"></i>
+            <i class="bi bi-heart heart"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="image-container">
+              <img src="AMAZON._SX3000_.jpg" alt="AMAZON" class="background-image">
+              <button class="overlay-button">Shop Now</button>
+          </div> -->
+
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col-lg-4 col-md-6 col-12">
+          <img
+            src="free-shipping-design-template-62c154107c385e27756564fcf74622fb_screen.jpg"
+            width="100"
+            class="img-ship"
+            alt=""
+          />
+          <h6 class="header-6">Free Shipping</h6>
+          <p class="paragraf-lorem">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <img
+            src="free-shipping-design-template-62c154107c385e27756564fcf74622fb_screen.jpg"
+            width="100"
+            class="img-ship"
+            alt=""
+          />
+          <h6 class="header-6">Free Shipping</h6>
+          <p class="paragraf-lorem">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <img
+            src="free-shipping-design-template-62c154107c385e27756564fcf74622fb_screen.jpg"
+            width="100"
+            class="img-ship"
+            alt=""
+          />
+          <h6 class="header-6">Free Shipping</h6>
+          <p class="paragraf-lorem">
+            Lorem Ipsum is simply dummy text of the printing <br />
+            and typesetting industry
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="row align-items-start">
+            <div class="col mt-5">
+              <h3>New Arrival</h3>
+              <div class="col-1 margin-hr">
+                <hr />
+              </div>
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="vga.jpg" alt="Cinque Terre" />
+                  </a>
+                  <h3 class="m-4">Rp 1.000.000</h3>
+                  <div class="desc">AISURIX VGA Card RX 580 8GB</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2 left-hr">
+                  <div class="hr-text">
+                    <h4>Our Blog</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mx-auto">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <p class="card-meal-type">Breakfast/Eggs</p>
+                    <h2 class="card-title">Délicieux Bénédicte</h2>
+                    <p class="card-body">
+                      Eggs Benedict with hollandaise sauce, crispy bacon and an
+                      assortment of garden herbs.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1769&q=80"
+                        />
+                      </div>
+                      <div class="card-text">
+                        <p class="card-meal-type">Lunch/Meat</p>
+                        <h2 class="card-title">Du bœuf Burger</h2>
+                        <p class="card-body">
+                          A beef burger with wholewheat patty, juicy lettuce and
+                          a side of gluten free fries
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80"
+                        />
+                      </div>
+                      <div class="card-text">
+                        <p class="card-meal-type">Soups/Meat</p>
+                        <h2 class="card-title">Soupe à l’oignon</h2>
+                        <p class="card-body">
+                          The traditional French soup made with onions and beef
+                          with a dollop of garlic and saffaron mayonise.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                z
+                <!-- Konten utama -->
+                <div class="container margin-footer">
+                  <!-- Konten Anda di sini -->
+                  <!-- Footer -->
+                  <footer class="footer mt-auto py-3">
+                    <div class="container">
+                      <div class="row">
+                        <!-- Logo and Copyright -->
+                        <div
+                          class="col-lg-2 col-md-4 text-center text-md-start mb-4 mb-md-0"
+                        >
+                          <img
+                            src="Amazon-Logo.png"
+                            width="100"
+                            alt="Amazon Logo"
+                            class="img-fluid"
+                          />
+                          <p class="footer-text mb-0">
+                            &copy; 2024 Amazon. <br />Semua Hak Dilindungi.
+                          </p>
+                        </div>
+                        <!-- About Us -->
+                        <div
+                          class="col-lg-2 col-md-4 text-center text-md-start mb-4 mb-md-0"
+                        >
+                          <p class="bold-about">About Us</p>
+                          <p>About Us</p>
+                          <p>Store Location</p>
+                          <p>Contacts</p>
+                          <p>Orders Tracking</p>
+                        </div>
+                        <!-- Useful Links -->
+                        <div
+                          class="col-lg-2 col-md-4 text-center text-md-start mb-4 mb-md-0"
+                        >
+                          <p class="bold-about">Useful Links</p>
+                          <p>Returns</p>
+                          <p>Support Policy</p>
+                          <p>Guide Size</p>
+                          <p>FAQs</p>
+                        </div>
+                        <!-- Follow Us -->
+                        <div
+                          class="col-lg-2 col-md-4 text-center text-md-start mb-4 mb-md-0"
+                        >
+                          <p class="bold-about">Follow Us</p>
+                          <p><a href="#" class="font-links">Instagram</a></p>
+                          <p><a href="#" class="font-links">Facebook</a></p>
+                          <p><a href="#" class="font-links">TikTok</a></p>
+                          <p><a href="#" class="font-links">Youtube</a></p>
+                        </div>
+                        <!-- Subscribe -->
+                        <div
+                          class="col-lg-2 col-md-4 text-center text-md-start mb-4 mb-md-0"
+                        >
+                          <p class="bold-about">Subscribe</p>
+                          <p>
+                            Get E-mail updates about our latest shop <br />and
+                            special offers
+                          </p>
+                          <p class="bold-about">Enter your mail here</p>
+                          <p><a href="#" class="font-links">E-MAIL</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+html, body {
+  overflow-x: hidden;
+}
+
+
+.img {
+    margin-top: 50px;
+    
+}
+
+.bagikan-margin {
+    margin-left: 20% ;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+.favorit-margin {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    margin-top: 100px !important;
+}
+
+.rating {
+    width: 150px !important;
+    margin-bottom: 200px  !important;
+}
+
+.checked {
+    color: orange;
+    
+  }
+
+.paragraf-bold {
+    font-weight: bold;
+   
+}
+
+.header-3 {
+    margin-left: 40px;
+}
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    margin-left: 25px;
+  }
+
+  .star-margin {
+    margin-left: 4%;
+  }
+
+  .text-dropdown {
+     margin-left: 40px;
+     margin-top: 20px;
+  }
+
+  .font-color {
+    color: #e84393;
+    margin-left: 40px;
+    margin-top: 8% !important;
+  }
+
+  .hr-line {
+    margin-left: 40px;
+  }
+
+  .header-4 {
+    font-weight: bold;
+    margin-left: 40px;
+  }
+
+  .header-6 {
+    margin-left: 40px;
+  }
+
+  .button {
+    margin-right: 10% !important;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 100% !important ;
+  }
+
+  .btn {
+    border-color: #818181;
+  }
+
+  .margin-right {
+    margin-right: 20%;
+  }
+  .blue {
+    background-color: transparent !important; /* Mengatur latar belakang tombol menjadi transparan */
+    border: 2px solid grey !important; /* Mengatur border berwarna biru */
+    color: gray !important; /* Mengatur warna teks menjadi biru */
+  }
+
+  .margin-jnt {
+    
+  }
+
+  .img-jnt {
+    margin-right: 300px;
+  }
+  
+  .btnn2 {
+    border: 2px solid black;
+    background-color: transparent;
+  }
+
+  .choice-button {
+    margin-left: 30px;
+  }
+
+  .dd-toggle {
+    background-color: transparent !important; /* Mengubah warna background menjadi transparan */
+    border: 2px solid #000; /* Menambahkan outline (border) dengan warna hitam dan ketebalan 2px */
+  }
+
+  .dd-menu {
+    background-color: transparent !important; /* Mengubah background menu menjadi transparan */
+    border: none; /* Menghilangkan border dari dropdown menu */
+  }
+
+  .font-colors1 {
+    color: grey;
+  }
+  .font-colors2 {
+    color: black;
+  }
+  .font-colors3 {
+    color: black;
+  }
+
+  .btn-group {
+    border: 2px solid grey; /* Border for the outer btn-group */
+    border-radius: 5px;
+}
+
+ 
+.btn-group .dropdown-menu {
+    border: 1px solid grey; /* Border for the dropdown menu */
+    border-radius: 5px;
+}
+
+.btn-group .dropdown-toggle::after {
+    border: 1px solid grey; /* Border for the dropdown toggle */
+}
+
+.button-dropdown {
+  margin-left: 100px !important;
+  margin-right: 100px;
+}
+
+.font-link {
+  color: black;
+  margin-top: 40px !important;
+}
+
+.btn-auto-width {
+  width: auto; /* Lebar otomatis sesuai konten */
+  padding: 10px 20px; /* Padding di dalam tombol */
+}
+
+.btn-outline-transparent1 {
+  background-color: transparent; /* Latar belakang transparan */
+  border: 2px solid #007bff; /* Border untuk tombol */
+  color: #007bff; /* Warna teks tombol */
+  padding: 0.5rem 1rem; /* Padding di dalam tombol */
+  border-radius: 5px; /* Radius sudut tombol */
+}
+
+.btn-outline-transparent:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Efek latar belakang saat hover */
+  color: #0056b3; /* Warna teks saat hover */
+  border-color: #0056b3; /* Warna border saat hover */
+}
+
+.clok {
+  margin-left: 40px;
+}
+
+.margin-4 {
+  margin-left: 100px;
+}
+
+.addres {
+  color: black;
+}
+
+.button-4 {
+  margin-left: 230px;
+}
+
+
+
+.font-jnt {
+  color: grey;
+}
+
+.button-day {
+  margin-left: 50px;
+}
+
+.harga {
+  margin-left: 50px;
+}
+
+.line-button2 {
+  margin-left: 45px ;
+  margin-top: 40px;
+}
+
+.icon-chat {
+  color: black;
+  font-weight: bold;
+
+}
+
+.button-chat {
+  margin-left: 55px;
+}
+
+.icon-checkout {
+  color: black;
+  font-weight: bold;
+}
+
+.icon-buy {
+  color: black;
+  font-weight: bold;
+
+
+}
+
+.button-buy {
+  margin-left: 100px;
+}
+
+.button-checkout {
+  margin-left: 10px ;
+  margin-right: 10px;
+}
+
+.button-color {
+  background-color: orange;
+}
+
+.pay-before {
+  margin-top: 100px;
+}
+
+.paragraf-bold1 {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.img-amazon {
+  width: 100px !important;
+}
+
+.font-amazon {
+  font-weight: bold;
+}
+
+.small-amazon {
+  margin-left: 20px;
+  color: grey;
+}
+
+.logo-amazon-atas {
+  width: 100px !important;
+  margin-left: 100px;
+}
+
+.link-buynow {
+  color: black;
+  text-decoration: none;
+}
+
+.btn-warning {
+  margin-bottom: 8px ;
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container to center content */
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Responsive button group */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ensure buttons fit and align properly */
+.btn {
+  flex: 1 1 auto;
+  margin: 5px;
+  min-width: 120px;
+}
+
+.button-logo img {
+  width: 100%;
+  max-width: 100px; /* Adjust size based on your needs */
+  height: auto;
+}
+
+.font-jnt {
+  display: block;
+}
+
+.button-day,
+.harga {
+  display: block;
+}
+
+/* Responsive dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .button-logo img {
+    max-width: 80px; /* Adjust size based on your needs */
+  }
+
+}
+@media (max-width: 480  px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .button-logo img {
+    max-width: 80px; /* Adjust size based on your needs */
+  }
+
+}

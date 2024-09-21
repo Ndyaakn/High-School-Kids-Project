@@ -1,0 +1,138 @@
+.intro {
+    margin-top: 200px !important;
+    margin-left: 70px;
+
+}
+
+.intro-tittle {
+    color: black;
+    
+    font-size: 30px;
+}
+
+.intro-desc {
+    color: black;
+}
+
+.form{
+    background-color: white;
+    border-radius: 12px; 
+    margin-top: 200px !important;
+    height: 600px;
+    width: 44% !important;
+    margin-left: 200px;
+    margin: 0%;
+}
+
+.Welcome-back {
+    margin-left: 140px;
+    margin-top: 37px;
+}
+
+.rener {
+    margin-left: 38px;
+    margin-right: 40px;
+}
+
+.apaty {
+    margin-left: 38px;
+    margin-right: 40px;
+}
+
+.form-check {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.d-grid {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.aoka {
+    margin-left: 39px;
+    border-radius: 20px;
+}
+
+.endx {
+    margin-top: 30px;
+    color: white;
+}
+
+.right {
+    margin-left: 100px;
+    margin-top: 37px;
+}
+
+form {
+    margin-left: 150px;
+}
+
+.ma {
+    margin-top: 100px;
+    text-align: left;
+}
+
+.bg-color {
+    background-color: grey;
+}
+
+.bgc {
+    background-color: white;
+}
+
+.bold-hr {
+    border: 0;
+    height: 2px; /* Mengatur ketebalan garis */
+    background-color: #000; 
+}
+
+.ticket {
+    color: white;
+}
+
+.img {
+    width: 99%;
+
+
+
+}
+
+.border {
+    border-radius: 10px;
+}
+
+.margin-zero {
+    margin: 0%;
+}
+
+.Forget {
+    margin-right: 41px;
+    color: grey !important;
+    text-decoration: none !important;
+}
+
+.blue {
+    background-color: transparent !important; /* Mengatur latar belakang tombol menjadi transparan */
+    border: 2px solid grey !important; /* Mengatur border berwarna biru */
+    color: grey !important; /* Mengatur warna teks menjadi biru */
+}
+.btn-transparent-blue:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Efek hover dengan latar belakang transparan */
+}
+
+.button-login {
+    background-color: grey !important;
+
+}
+
+.sign-up {
+    color: grey;
+    text-decoration: none !important;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
